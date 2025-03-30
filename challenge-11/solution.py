@@ -51,4 +51,10 @@ for line in distilled:
         else:
             sums[line[0]] += line[1]
 
-print('$${}')
+print(f"Unique Customers: {len(sums)}")
+print(f"Total Money Spent: {sum(sums.values())}")
+
+"""
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+graceuecker@Graces-MacBoo
+"""

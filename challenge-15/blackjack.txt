@@ -18,12 +18,15 @@ Your job is to maximize your chances of winning each hand by deciding what to do
 
 player: 10 7
 dealer: 10
+STAND
 
 player: 7, 9
 dealer: 10
+HIT
 
 player: 9, 9
 dealer: 9
+
 
 player: 7, A
 dealer: A
