@@ -30,11 +30,11 @@ SPLIT
 
 player: 7, A
 dealer: A
-HIT
+STAND
 
 player: 7, A
 dealer: 5
-STAND
+DOUBLE_DOWN
 
 player: 2, 3
 dealer: 3
@@ -42,11 +42,11 @@ HIT
 
 player: 2, 2
 dealer: 9
-HIT
+SPLIT
 
 player: 5, 7
 dealer: 4
-STAND
+HIT
 
 player: 6, 6
 dealer: 2
