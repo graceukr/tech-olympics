@@ -3,3 +3,10 @@ or compete (aggressively bid). If both cooperate, you each earn $5M.
 If one competes and the other doesn’t, the aggressive trader earns $8M 
 and the other earns $2M. If both compete, you each earn $3M. 
 What’s the Nash equilibrium?
+
+Answer: 
+From what I understand, Nash equilibrium states that cooperating will 
+always benefit both the most, so if you compete against each other 
+the net benefit for both parties will not be greater than if you 
+both cooperate. However, one party has the opportunity to earn more 
+than if they were to cooperate if they choose to agressively bid.  
