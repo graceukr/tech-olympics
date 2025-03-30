@@ -1,47 +1,93 @@
-let timer;
-let timeRemaining;
+let timer = null;
+let clockTimer = null;
+let timeRemaining = 0;
 let isTimerRunning = false;
 
-document.getElementById("startBtn").addEventListener("onClick", startTimer);
-document.getElementById("resetBtn").addEventListener("onClick", resetTimer);
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("startBtn").addEventListener("click", startTimer);
+    document.getElementById("resetBtn").addEventListener("click", resetTimer);
+    
+    showClock();
+});
 
 function startTimer() {
     if (isTimerRunning) return;
-
-    let minutes = document.getElementById("minutesInput").value;
+    
+    const minutes = parseInt(document.getElementById("minutesInput").value);
+    if (!minutes || isNaN(minutes) || minutes <= 0) {
+        alert("Please enter a valid number of minutes");
+        return;
+    }
+    
+    clearAllTimers();
+    
     timeRemaining = minutes * 60;
     isTimerRunning = true;
-
-    document.getElementById("status").innerHTML = "Mode: Timer";
-
-    timer = setInterval(() => {
+    document.getElementById("status").textContent = "Mode: Timer";
+    
+    updateTimerDisplay();
+    
+    timer = setInterval(function() {
         timeRemaining--;
-        let mins = Math.floor(timeRemaining / 60);
-        let secs = timeRemaining % 60;
-        document.getElementById("display").innerHTML = mins + ":" + secs;
-
-        if (timeRemaining == 0) {
-            clearTimeout(timer);
+        updateTimerDisplay();
+        
+        if (timeRemaining <= 0) {
+            clearAllTimers();
             isTimerRunning = false;
             showClock();
         }
     }, 1000);
 }
 
-function showClock() {
-    if (isTimerRunning) return;
+function updateTimerDisplay() {
+    const hours = Math.floor(timeRemaining / 3600);
+    const minutes = Math.floor((timeRemaining % 3600) / 60);
+    const seconds = timeRemaining % 60;
+    
+    const formattedTime = 
+        (hours < 10 ? "0" + hours : hours) + ":" +
+        (minutes < 10 ? "0" + minutes : minutes) + ":" +
+        (seconds < 10 ? "0" + seconds : seconds);
+    
+    document.getElementById("display").textContent = formattedTime;
+}
 
-    setInterval(() => {
-        let now = new Date();
-        let hours = now.getHours();
-        let minutes = now.getMinutes();
-        let seconds = now.getSeconds();
-        document.getElementById("display").innerHTML = hours + ":" + minutes + ":" + seconds;
-    }, 1000);
+function showClock() {
+    clearAllTimers();
+    
+    document.getElementById("status").textContent = "Mode: Clock";
+    
+    updateClockDisplay();
+    
+    clockTimer = setInterval(updateClockDisplay, 1000);
+}
+
+function updateClockDisplay() {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    
+    const formattedTime = 
+        (hours < 10 ? "0" + hours : hours) + ":" +
+        (minutes < 10 ? "0" + minutes : minutes) + ":" +
+        (seconds < 10 ? "0" + seconds : seconds);
+    
+    document.getElementById("display").textContent = formattedTime;
 }
 
 function resetTimer() {
-    clearTimeout(timer);
+    clearAllTimers();
     isTimerRunning = false;
+    document.getElementById("minutesInput").value = "";
+    
     showClock();
+}
+
+function clearAllTimers() {
+    if (timer) clearInterval(timer);
+    if (clockTimer) clearInterval(clockTimer);
+    
+    timer = null;
+    clockTimer = null;
 }

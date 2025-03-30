@@ -4,3 +4,8 @@ and an ask (sell) price. If your goal is to make a profit
 from the spread while minimizing risk, how would you set your 
 bid and ask prices?
 
+answer: 
+You should set your bid slighly under the current trading price of 100 dollars and the ask price slightly
+above question the current trading price. This would create a narrow spread which minimizes risk because 
+it helps you trade more often, avoid holding too much stock, and keeps prices competitive.
+
