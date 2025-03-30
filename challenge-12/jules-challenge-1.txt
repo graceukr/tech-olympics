@@ -7,4 +7,6 @@ f = {10 : 3, 20 : 5, 30 : 2, 40 : 7, 50 : 1}
 
 What is the optimal BST structure that minimizes the weighted search cost?
 
+The optional BST structure would be having 
+
 Bonus: How does dynamic programming help solve this problem efficiently?
