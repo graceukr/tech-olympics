@@ -2,7 +2,8 @@
 
 Directions: Reference a standard Chinook database model
 
-Question: A particular creator is looking for some short audio clips that are dramatic or suspenseful. Give the id, name, and duration (in milliseconds) of any tracks from the “Quick clips” playlist are labeled with the genre of dramatic or suspenseful. 
+Question: A particular creator is looking for some short audio clips that are dramatic or suspenseful. Give the id, name, and duration (in milliseconds) 
+of any tracks from the “Quick clips” playlist are labeled with the genre of dramatic or suspenseful. 
 
 Part One: Construct a Relational Algebra query
 

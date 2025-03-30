@@ -1,20 +1,27 @@
 -- Family Feud: KTP Edition --
 
 Directions:
+
 - For each question (except the last), your team must come up with 1 answer and submit together
 - There are multiple answers, however they each hold different point values.
-   - for example, "According to US News, what were the most popular majors at Northeastern from 2023 graduates?"
-   - Answers: 1st- Business (6 points), 2nd- Engineering (4 points), 3rd- CS (2 points), 4th- Biological sciences (1 points)
+  - for example, "According to US News, what were the most popular majors at Northeastern from 2023 graduates?"
+  - Answers: 1st- Business (6 points), 2nd- Engineering (4 points), 3rd- CS (2 points), 4th- Biological sciences (1 points)
 - Do NOT use any outside help (no phones, google, or AI) to answer these questions, it's all for fun anyways! We will check this :)
-   
+
 (b-o-n-u-s: find a spoon in the room for 10 points)
 
 1. Question: What are the most widely used programming languages among developers worldwide as of 2024?
-JavaScript, Python, 
-2. Question: What year was Northeastern University founded? [The closer you are, the more points your team recieves]
+   JavaScript/TypeScript, Python, Java
 
+2. Question: What year was Northeastern University founded? [The closer you are, the more points your team recieves]
+   1898
 3. Question: What are the most popular cloud storage services?
+   Personal/Consumer: iCloud, Google Drive
+   Enterprise/Developer: AWS, Microsoft Azure, Google Cloud Provider
 
 4. Question: What are the most used code editors or IDEs (Integrated Development Environments) by developers?
+   VSCode, Visual Studio, JetBrains IDES (DataGrip, CLion, IntelliJ IDEA), Vim, Emacs, Neovim
 
 5. Question: What are the Boston school's KTP chapters- please put 2 answers.
+   Omega chapter - Northeastern, founded Fall 2024
+   Mu chapter - BU, founded Fall 2022

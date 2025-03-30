@@ -13,4 +13,12 @@ Question:
     • How many generalists and specialists should be employed to handle the 50/50 call split efficiently?
 
 Answer:
-    * Employ all specialists
+    2000 per hour total calls
+    1000 sales calls 1000 support calls
+    generalists (G): 10 calls/hour, 10/hour
+    - 10 calls/$10 = 1 call/dollar
+    specialists (S): 25 calls/hour, 20/hour
+    - 25 calls/$20 = 1.25 calls/dollar
+
+    2000 / 25 = 80 specialists
+    Employ 80 specialists and 0 generalists because specialists are more efficient
