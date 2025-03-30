@@ -7,6 +7,6 @@ FROM Track
   JOIN Genre on Track.GenreId = Genre.GenreId
 WHERE Playlist.Name = 'Quick clips'
   AND (
-    t.genre = 'dramatic'
-    OR t.genre = 'suspenseful'
+    Genre.Name = 'dramatic'
+    OR Genre.Name = 'suspenseful'
   );

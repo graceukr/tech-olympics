@@ -6,5 +6,11 @@ Question: A particular creator is looking for some short audio clips that are dr
 of any tracks from the “Quick clips” playlist are labeled with the genre of dramatic or suspenseful. 
 
 Part One: Construct a Relational Algebra query
-
+π Track.Trackid, Track.Name, Track.Milliseconds
+ σ Playlist.Name="Quick clips" AND (Genre.Name="dramatic" OR Genre.Name="suspenseful") 
+ (Track ⋈ Track.TrackId = PlaylistTrack.TrackId 
+    PlaylistTrack ⋈ Track.Trackid = Playlist.TrackId 
+    Playlist ⋈ Track.GenreId = Genre.GenreId)
+    
 Part Two: Construct a SQL query 
+In challeng-9.sql

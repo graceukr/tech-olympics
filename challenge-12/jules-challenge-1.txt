@@ -7,6 +7,12 @@ f = {10 : 3, 20 : 5, 30 : 2, 40 : 7, 50 : 1}
 
 What is the optimal BST structure that minimizes the weighted search cost?
 
-The optional BST structure would be having 
+ANSWER:
+The optional BST structure would be having 40 as the root. Then it would be 20 left, 50 right,
+and then 10 and 30 going left and right respectively off of 20. This would minimize the search
+cost because this tree has a height of three which is the minimal height possible for the tree.
 
 Bonus: How does dynamic programming help solve this problem efficiently?
+ANSWER:
+Dynamic programming helps solve this problem efficiently because using dynamic
+programming we can create the subtrees first

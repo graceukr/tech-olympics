@@ -6,3 +6,10 @@
 print(mystery(5) // mystery(3))
 
 What will the output of the following Python code be? What is the time complexity?
+
+ANSWER:
+The output is 20
+The time complexity is O(n) 
+- each call to mystery(n) makes one recursive call to mystery(n-1)
+- makes recursive call until it reaches the base case of n = 0
+- input size n, function makes n recursive calls, gives us a time of complexity of O(n) 
