@@ -20,19 +20,15 @@ Answer:
     - 10 calls/$10 = 1 call/dollar
     specialists (S): 25 calls/hour, 20/hour
     - 25 calls/$20 = 1.25 calls/dollar
-    *specialists are more efficient:  employ as many as possible
 
-    10G + 25S >= 2000
-    cost = 10G + 20S
+    Scenario 1: 1200 Sales Calls, 800 Support Calls 
+    generalists - 1200 calls / 10 calls/hour = 120, cost = 120 * 10 = $1200
+    specialists - 800 calls / 25 calls/hour = 32, cost = 32 * 20 = $640
+    120 generalists, 32 specialists
+    cost: 1840/hour
 
-    Scenario 1: 1200 Sales Calls, 800 Support Calls (2000 total calls)
-    2000 / 25 = 80 specialists
-    0 generalists 
-    80 specialists
-    cost: 1600/hour
-
-    Scenario 2: 800 Sales Calls, 1200 Support Calls (2000 total calls)
-    2000 / 25 = 80 specialists
-    0 generalists
-    80 specialists
-    total cost: 1600/hour
+    Scenario 2: 800 Sales Calls, 1200 Support Calls
+    generalists - 800 calls / 10 calls/hour = 80, cost = 80 * 10 = $800
+    specialists - 1200 calls / 25 calls/hour = 48, cost = 48 * 20 = $960
+    80 generalists, 48 specialists
+    cost: 1760/hour
