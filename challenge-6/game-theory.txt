@@ -5,5 +5,4 @@ and the other earns $2M. If both compete, you each earn $3M.
 What’s the Nash equilibrium?
 
 Answer: 
-Cooperate Cooperate
-+5M,+5M
+Nash equilibrium is both people compete, earning $3 million each.
