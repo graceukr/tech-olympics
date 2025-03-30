@@ -26,25 +26,32 @@ HIT
 
 player: 9, 9
 dealer: 9
-
+SPLIT
 
 player: 7, A
 dealer: A
+HIT
 
 player: 7, A
 dealer: 5
+STAND
 
 player: 2, 3
 dealer: 3
+HIT
 
 player: 2, 2
 dealer: 9
+HIT
 
 player: 5, 7
 dealer: 4
+STAND
 
 player: 6, 6
 dealer: 2
+SPLIT
 
 player: 4, 5
 dealer: 6
+DOUBLE-DOWN
